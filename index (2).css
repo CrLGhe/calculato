@@ -1,0 +1,53 @@
+.calculator {
+    width: 200px;
+    margin: 50px auto;
+    border: 5px solid #e6e8e8;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .keys {
+    display: grid;/*все прямые потомки этого элемента станут элементами сетки*/
+    grid-template-columns: repeat(4, 1fr);/*определяем ряды и колонки в нашей сетке*/
+    /*нотация repeat() повторяет всю структуру треков или её часть*/
+    grid-gap: 5px;/*добавляем промежутки или дорожки между грид-ячейками*/
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+    border-radius: 10px;/* закругление углов кнопки. Чем меньше цифра тем меньше закругление*/ 
+  }
+
+
+/*Темы оформления====================================*/
+  .light-theme {
+    background-color: #edf1f3;
+    color: #000000;
+  }
+  
+  .dark-theme {
+    background-color: #151516;
+    color: #ffffff;
+  }
+
+
+/*Анимации при нажатии кнопок калькулятора*/
+button {
+    padding: 10px;
+    background-color: #f7f2a5;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;/* ease - применить ко всем изменённым свойствам */ 
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+

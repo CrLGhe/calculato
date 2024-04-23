@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <div class="themes">
+        <button onclick="setTheme('light')">Светлая тема</button>
+        <button onclick="setTheme('dark')">Темная тема</button>
+        <button onclick="clearHistory()">Очистить историю</button>
+      </div>
+
+      <br><div id="history"></div>
+<!--Клавиатурная поддержка=======================-->
+<input type="text" id="result" readonly onkeydown="handleKeyPress(event)">
+
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <div class="keys">
+          <button onclick="appendToResult('7')"><h2><strong>7</strong></h2></button>
+          <button onclick="appendToResult('8')"><h2><strong>8</strong></h2></button>
+          <button onclick="appendToResult('9')"><h2><strong>9</strong></h2></button>
+          <button onclick="appendToResult('+')"><h2><strong>+</strong></h2></button>
+          <button onclick="appendToResult('4')"><h2><strong>4</strong></h2></button>
+          <button onclick="appendToResult('5')"><h2><strong>5</strong></h2></button>
+          <button onclick="appendToResult('6')"><h2><strong>6</strong></h2></button>
+          <button onclick="appendToResult('-')"><h2><strong>-</strong></h2></button>
+          <button onclick="appendToResult('1')"><h2><strong>1</strong></h2></button>
+          <button onclick="appendToResult('2')"><h2><strong>2</strong></h2></button>
+          <button onclick="appendToResult('3')"><h2><strong>3</strong></h2></button>
+          <button onclick="appendToResult('*')"><h2><strong>*</strong></h2></button>
+          <button onclick="appendToResult('0')"><h2><strong>0</strong></h2></button>
+          <button onclick="clearResult()"><h2><strong>C</strong></h2></button>
+          <button onclick="calculate()"><h2><strong>=</strong></h2></button>
+          <button onclick="appendToResult('/')"><h2><strong>/</strong></h2></button>
+        </div>
+      </div>
+    <script src="./index.js"></script>
+</body>
+</html>
